@@ -10,12 +10,13 @@ import com.grocery.service.GroceryServiceImpl;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Please Select your Choice : \n1.Enter Product Name\n1.Enter Product Id\n3.See All the Products");
-		
+		System.out.println(
+				"Please Select your Choice : \n1.Enter Product Name\n2.Enter Product Id\n3.See All the Products");
+
 		int select = scanner.nextInt();
-		
+
 		GroceryService groceryReference = new GroceryServiceImpl();
 		switch (select) {
 		case 1:
@@ -52,10 +53,9 @@ public class Main {
 		default:
 			System.out.println("Please Select Valid Choice");
 		}
-		
+
 		System.out.println("...................Happy Shopping............................");
 		scanner.close();
 	}
-
 
 }
